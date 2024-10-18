@@ -1,7 +1,2 @@
 # ./.config/nvim
 .config/btop/btop.log
-.config/fish/fish_variables
-.config/fish/conf.d
-.config/fish/themes
-.config/fish/functions
-.config/fish/completions
