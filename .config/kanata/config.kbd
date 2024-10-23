@@ -1,0 +1,12 @@
+(defsrc
+  esc caps
+)
+
+(defalias
+  capsesc (tap-hold-release 100 150 caps esc)
+  escctrl (tap-hold-release 100 150 esc lctrl)
+)
+
+(deflayer layers
+  @capsesc @escctrl
+)
