@@ -6,7 +6,7 @@ configuration {
 /*	xoffset: 0;*/
 /*	fixe-num-lines: true;*/
 	show-icons: true;
-	terminal: "foot";
+	terminal: "alacritty";
 /*	ssh-client: "ssh";*/
 /*	ssh-comman: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
 /*	run-command: "{cmd}";*/
