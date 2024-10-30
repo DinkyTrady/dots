@@ -1,21 +1,22 @@
 return {
   {
     "max397574/better-escape.nvim",
+    enable = false,
     event = "InsertEnter",
     opts = {
       mappings = {
         i = {
           k = {
             k = "<Esc>",
-            j = "<Esc>"
-          }
+            j = "<Esc>",
+          },
         },
         c = {
           k = {
             k = "<Esc>",
-            j = "<Esc"
-          }
-        }
+            j = "<Esc>",
+          },
+        },
       },
     },
   },
@@ -29,8 +30,25 @@ return {
   },
   {
     "vyfor/cord.nvim",
-    build = './build || .\\build',
+    build = "./build || .\\build",
     event = "VeryLazy",
-    opts = {}
+    opts = {},
+  },
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+    event = "LazyFile",
+  },
+  {
+    "mistricky/codesnap.nvim",
+    event = "LazyFile",
+    build = "make",
+    opts = {
+      title = "",
+      code_font_family = "JetBrainsMono Nerd Font",
+      watermark = "",
+      has_line_numbers = true,
+      -- has_breadcrumbs = true,
+      save_path = os.getenv("XDG_PICTURES_DIR") or  (os.getenv("HOME").. "/Pictures")
+    }
   }
 }

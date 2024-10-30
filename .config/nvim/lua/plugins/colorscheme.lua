@@ -10,13 +10,13 @@ return {
     lazy = true,
     name = "catppuccin",
     opts = {
-      flavour = "macchiato",
+      flavour = "mocha",
       transparent_background = true,
       intergrations = {
         lualine = true,
       },
       highlight_overrides = {
-        ["macchiato"] = function(colors)
+        ["mocha"] = function(colors)
           return {
             BufferLineBufferSelected = { fg = colors.lavender },
             NavicText = { link = "@variable" },
