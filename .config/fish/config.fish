@@ -15,4 +15,9 @@ if status is-interactive
 
     # Add path
     fish_add_path ~/.local/share/nvim/mason/bin
+
+    # Aliases
+    alias l="eza -a --icons"
+    alias ll="eza -lahF --icons"
+    alias lt="eza -lahF --tree --icons"
 end
