@@ -1,12 +1,18 @@
 (defsrc
-  esc caps
+  esc caps ;
+)
+
+(defvar
+  tap-time 100
+  hold-time 150
 )
 
 (defalias
-  capsesc (tap-hold-release 100 150 caps esc)
-  escctrl (tap-hold-release 100 150 esc lctrl)
+  capsesc (tap-hold-release $tap-time $hold-time caps esc)
+  escctrl (tap-hold-release $tap-time $hold-time esc lctrl)
+  ; (tap-hold-release $tap-time $hold-time ; rmet)
 )
 
-(deflayer layers
-  @capsesc @escctrl
+(deflayer base
+  @capsesc @escctrl @;
 )
