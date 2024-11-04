@@ -48,7 +48,7 @@ return {
       watermark = "",
       has_line_number = true,
       -- has_breadcrumbs = true,
-      save_path = os.getenv("XDG_PICTURES_DIR") or  (os.getenv("HOME").. "/Pictures/codesnap")
+      save_path = os.getenv("XDG_PICTURES_DIR") or (os.getenv("HOME") .. "/Pictures/codesnap")
     }
   }
 }

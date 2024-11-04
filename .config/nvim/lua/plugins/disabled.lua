@@ -5,6 +5,7 @@ return {
   { "folke/flash.nvim",                        enabled = false },
   { "akinsho/bufferline.nvim",                 enabled = false },
   { "nvim-neo-tree/neo-tree.nvim",             enabled = false },
+  { "hrsh7th/nvim-cmp",                        enabled = false },
   -- { "stevearc/conform.nvim",                   enabled = false },
   -- { "folke/neodev.nvim",                       enabled = false },
   { "folke/tokyonight.nvim",                   enabled = false },
