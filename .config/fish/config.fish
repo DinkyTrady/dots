@@ -1,4 +1,9 @@
 if status is-interactive
+    function starship_transient_prompt_func
+        starship module character
+    end
+    starship init fish | source
+    enable_transience
     # Commands to run in interactive sessions can go here
     starship init fish | source
 
@@ -10,14 +15,15 @@ if status is-interactive
     set -Ux RUSTUP_HOME $HOME/DevPkg/.rustup
     set -Ux CARGO_HOME $HOME/DevPkg/.cargo
 
-    alias vi nvim
     set -Ux EDITOR nvim
 
     # Add path
     fish_add_path ~/.local/share/nvim/mason/bin
 
     # Aliases
+    alias vi nvim
     alias l="eza -a --icons"
+    alias ls="eza --icons"
     alias ll="eza -lahF --icons"
-    alias lt="eza -lahF --tree --icons"
+    alias la="eza -lahF --tree --icons"
 end
